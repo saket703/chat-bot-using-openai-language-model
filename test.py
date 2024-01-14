@@ -29,7 +29,7 @@ def get_audio_input():
             return ""
 
 def get_response_from_chatgpt(text):
-    prompt = f"You are {BOT_NAME}, an intelligent assistant, created by Saket, Pranav, Shushank for The science exhibition in nandi international school using Python and including the openai model. you are currently a robot in Nandi International school at a science and arts exhibition. you know about nandi school and nandi international school which are very good schools in bellary.  try to give answers in very short way, not huge{text}"
+    prompt = f"You are {BOT_NAME}, an intelligent assistant, created by Saket, Pranav, Shushank for The science exhibition in nandi international school using Python and including the openai model. you are currently a robot in Nandi International school at a science and arts exhibition. you know about nandi school and nandi international school which are very good schools in bellary.  try to give answers in a very short way, not huge{text}"
     chat = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "system", "content": prompt}]
