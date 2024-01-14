@@ -5,7 +5,7 @@ import os
 
 # Set your API keys for ChatGPT
 os.system('cls')
-openai.api_key = "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"
+openai.api_key = "Your Api"
 
 BOT_NAME = "Spark"  # Set the bot's name here
 
