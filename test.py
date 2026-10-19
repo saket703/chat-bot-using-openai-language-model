@@ -3,11 +3,10 @@ import pyttsx3
 import openai
 import os
 
-# Set your API keys for ChatGPT
 os.system('cls')
 openai.api_key = "Your Api Key"
 
-BOT_NAME = "Spark"  # Set the bot's name here
+BOT_NAME = "Spark" 
 
 def get_audio_input():
     r = sr.Recognizer()
@@ -37,7 +36,6 @@ def get_response_from_chatgpt(text):
     response = chat.choices[0].message.content
     return response
 
-# Initialize text-to-speech engine
 engine = pyttsx3.init()
 
 def speak_response(response):
